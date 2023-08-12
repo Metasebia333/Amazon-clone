@@ -1,0 +1,31 @@
+[debug] [2023-03-09T07:48:45.066Z] ----------------------------------------------------------------------
+[debug] [2023-03-09T07:48:45.072Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions --force
+[debug] [2023-03-09T07:48:45.075Z] CLI Version:   11.24.0
+[debug] [2023-03-09T07:48:45.076Z] Platform:      win32
+[debug] [2023-03-09T07:48:45.076Z] Node Version:  v18.14.1
+[debug] [2023-03-09T07:48:45.082Z] Time:          Thu Mar 09 2023 10:48:45 GMT+0300 (East Africa Time)
+[debug] [2023-03-09T07:48:45.083Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-09T07:48:45.302Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-09T07:48:45.304Z] > authorizing via signed-in user (metasebiagizaww@gmail.com)
+[debug] [2023-03-09T07:48:45.304Z] [iam] checking project e-clone-2e8a0 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-03-09T07:48:45.310Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-2e8a0:testIamPermissions [none]
+[debug] [2023-03-09T07:48:45.311Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-2e8a0:testIamPermissions x-goog-quota-user=projects/e-clone-2e8a0
+[debug] [2023-03-09T07:48:45.311Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-2e8a0:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-03-09T07:48:50.316Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-2e8a0:testIamPermissions 200
+[debug] [2023-03-09T07:48:50.316Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-2e8a0:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-03-09T07:48:50.317Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/e-clone-2e8a0/serviceAccounts/e-clone-2e8a0@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-03-09T07:48:50.318Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/e-clone-2e8a0/serviceAccounts/e-clone-2e8a0@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-03-09T07:48:54.636Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/e-clone-2e8a0/serviceAccounts/e-clone-2e8a0@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-03-09T07:48:54.636Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/e-clone-2e8a0/serviceAccounts/e-clone-2e8a0@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'e-clone-2e8a0'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[debug] [2023-03-09T07:49:28.006Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.

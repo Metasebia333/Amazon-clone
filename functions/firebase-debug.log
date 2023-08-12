@@ -1,0 +1,50 @@
+[debug] [2023-06-22T09:37:21.262Z] ----------------------------------------------------------------------
+[debug] [2023-06-22T09:37:21.267Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2023-06-22T09:37:21.268Z] CLI Version:   11.25.2
+[debug] [2023-06-22T09:37:21.268Z] Platform:      win32
+[debug] [2023-06-22T09:37:21.269Z] Node Version:  v18.14.1
+[debug] [2023-06-22T09:37:21.271Z] Time:          Thu Jun 22 2023 03:37:21 GMT-0600 (Central Standard Time)
+[debug] [2023-06-22T09:37:21.272Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-22T09:37:21.468Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-22T09:37:21.469Z] > authorizing via signed-in user (metasebiagizaww@gmail.com)
+[debug] [2023-06-22T09:37:21.469Z] [iam] checking project e-clone-2e8a0 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-06-22T09:37:21.473Z] > refreshing access token with scopes: []
+[debug] [2023-06-22T09:37:21.478Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-22T09:37:21.478Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-22T09:37:42.646Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-06-22T09:37:42.647Z] > refreshing access token with scopes: []
+[debug] [2023-06-22T09:37:42.648Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-22T09:37:42.648Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-22T09:38:03.714Z] [functions] service account IAM check errored, deploy may fail:Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci {"name":"FirebaseError","children":[],"exit":1,"message":"Authentication Error: Your credentials are no longer valid. Please run \u001b[1mfirebase login --reauth\u001b[22m\n\nFor CI servers and headless environments, generate a new token with \u001b[1mfirebase login:ci\u001b[22m","status":500}
+[info] 
+[info] === Deploying to 'e-clone-2e8a0'...
+[info] 
+[info] i  deploying functions 
+[info] +  functions: Finished running predeploy script. 
+[debug] [2023-06-22T09:38:03.743Z] > refreshing access token with scopes: []
+[debug] [2023-06-22T09:38:03.744Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-22T09:38:03.745Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-22T09:38:24.811Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-06-22T09:38:25.099Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
+    at async Client.addAuthHeader (C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async needProjectNumber (C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\projectUtils.js:46:22)
+    at async prepare (C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\prepare.js:36:27)
+    at async chain (C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:35:9)
+    at async deploy (C:\Users\ICON-TECH\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:79:5)
+[error] 
+[error] Error: Failed to get Firebase project e-clone-2e8a0. Please make sure the project exists and your account has permission to access it.
